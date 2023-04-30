@@ -55,3 +55,24 @@ grd.addColorStop(1, "white");
 
 ctx.fillStyle = grd;
 ctx.fillRect(20, 20, 150, 100);
+
+//Form validation
+
+function validateForm() {
+	let x = document.forms["myForm"]["fname"].value;
+	if (x == "") {
+	  alert("Name must be filled out");
+	  return false;
+	}
+  }
+
+
+  //Popup form
+
+  function openForm() {
+	document.getElementById("myForm1").style.display = "block";
+  }
+  
+  function closeForm() {
+	document.getElementById("myForm1").style.display = "none";
+  }
